@@ -1,0 +1,57 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-aws-iam-instance-role-policy-attachment
+
+# License of this project
+license: "AGPL3"
+
+# Canonical GitLab repo
+gitlab_repo: guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment
+
+# Badges to display
+badges: []
+
+# Short description of this project
+description: |-
+  This is a terraform module that creates an ec2 instance role and attaches the provided policies to it.
+
+introduction: |-
+  This module
+
+# How to use this project
+usage: |-
+
+  ```hcl
+  module "instance_role_attachment" {
+    source     = "git::https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment?ref=tags/0.1.0"
+    name       = var.name
+    namespace  = var.namespace
+    stage      = var.stage
+    attributes = module.label.attributes
+
+    iam_policy_arns = [
+       var.some_policy_arn,
+       var.some_other_policy_arn,
+    ]
+  }
+  ```
+
+related:
+  - name: terraform-aws-ssm-param-store-iam
+    description: This is a terraform module that creates a IAM role and policy that allows an EC2 instance to fetch SSM params that begin with a prefix.
+    url: https://gitlab.com/guardianproject-ops/terraform-aws-ssm-param-store-iam
+
+include:
+  - "docs/terraform.md"
+
+funded_by_cdr: true
+# Contributors to this project
+contributors:
+  - name: "Abel Luck"
+    gitlab: "abelxluck"
+    gravatar: 0f605397e0ead93a68e1be26dc26481a
