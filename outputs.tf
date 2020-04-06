@@ -1,14 +1,14 @@
-output "name" {
-  value       = "${join("", aws_iam_role.default.*.name)}"
+output "instance_role_name" {
+  value       = aws_iam_role.instance.name
   description = "The name of the IAM instance role created"
 }
 
-output "id" {
-  value       = "${join("", aws_iam_role.default.*.unique_id)}"
+output "instance_role_id" {
+  value       = aws_iam_role.instance.id
   description = "The stable and unique string identifying the instance role"
 }
 
-output "arn" {
-  value       = "${join("", aws_iam_role.default.*.arn)}"
+output "instance_role_arn" {
+  value       = aws_iam_role.instance.arn
   description = "The Amazon Resource Name (ARN) specifying the instance role"
 }
