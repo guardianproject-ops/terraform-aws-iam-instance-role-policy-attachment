@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Removed
 
-## [0.1.0] - 2020-04-04
+## [0.1.0] - 2020-04-06
 
 ### Added
 
@@ -26,5 +26,5 @@ n/a
 
 n/a
 
-[Unreleased]: https://gitlab.com/guardianproject-ops/terraform-aws-gitlab-ci-settings/compare/0.1.0...HEAD
-[0.1.0]: https://gitlab.com/guardianproject-ops/terraform-aws-gitlab-ci-settings/tag/0.1.0
+[Unreleased]: https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment/compare/0.1.0...HEAD
+[0.1.0]: https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment/tag/0.1.0
