@@ -28,7 +28,7 @@ usage: |-
 
   ```hcl
   module "instance_role_attachment" {
-    source     = "git::https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment?ref=tags/0.1.0"
+    source     = "git::https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment?ref=master"
     name       = var.name
     namespace  = var.namespace
     stage      = var.stage
