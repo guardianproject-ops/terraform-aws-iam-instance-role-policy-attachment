@@ -2,17 +2,6 @@ terraform {
   required_version = ">= 0.12"
 }
 
-module "label" {
-  source      = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.19.2"
-  namespace   = var.namespace
-  name        = var.name
-  stage       = var.stage
-  environment = var.environment
-  delimiter   = var.delimiter
-  attributes  = var.attributes
-  tags        = var.tags
-}
-
 data "aws_iam_policy_document" "instance_assume_role" {
   statement {
     actions = ["sts:AssumeRole"]
@@ -25,7 +14,7 @@ data "aws_iam_policy_document" "instance_assume_role" {
 }
 
 resource "aws_iam_role" "instance" {
-  name               = module.label.id
+  name               = module.this.id
   path               = "/"
   assume_role_policy = data.aws_iam_policy_document.instance_assume_role.json
 
