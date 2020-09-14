@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment/compare/2.0.1...2.1.0) (2020-09-14)
+
+
+### Features
+
+* Update to context.tf ([5e09bac](https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment/commit/5e09bacee8857b6cedc237a3d3bfb13ffa6a1c4c))
+
 ### [2.0.1](https://gitlab.com/guardianproject-ops/terraform-aws-iam-instance-role-policy-attachment/compare/2.0.0...2.0.1) (2020-09-03)
 
 
